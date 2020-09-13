@@ -11,19 +11,110 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome/css/all.css">
 </head>
+<style media="screen">
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .input {
+    position: absolute;
+  }
+
+  .scene {
+    width: 1440px;
+    max-width: 100%;
+    min-height: 100vh;
+    margin: auto;
+    padding: 40px 30px;
+  }
+
+  .card-wrap {
+    display: block;
+    width: 300px;
+    max-width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .card,
+  .front,
+  .back,
+  .card-photo {
+    width: 100%;
+    height: 100%;
+  }
+
+  .card-face {
+    position: absolute;
+    backface-visibility: hidden;
+  }
+
+  .card {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s, box-shadow .4s;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149);
+    border-radius: 10px;
+  }
+
+  .card-photo {
+    object-fit: none;
+    border-radius: 10px;
+  }
+
+  .card:hover {
+    box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.302), 0 4px 8px 3px rgba(60, 64, 67, 0.149);
+  }
+
+  .back {
+    background-color: white;
+    transform: rotateY(180deg);
+    text-align: center;
+    color: darkgray;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+  }
+
+  .back p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .flipcard {
+    opacity: 0;
+  }
+
+  input:checked+.card {
+    transform: rotateY(180deg);
+  }
+
+  @media screen and (min-width: 960px) {
+    .scene {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+</style>
 
 <body>
 
     <!-- Start Preload -->
-    <div class="preloader">
+    <!-- <div class="preloader">
     </div>
     <div class="block-1"></div>
     <div class="block-2"></div>
     <div class="logo-load">
-        <img src="assets/img/logo.svg" alt="">
+        <img src="assets/img/lorol-roc.png" alt="">
     </div>
     <div class="logo-load spinning"></div>
-    <div class="over-all"></div>
+    <div class="over-all"></div> -->
     <!-- End Preload -->
 
     <!-- Start Navbar -->
@@ -34,8 +125,8 @@
                 <!-- logo -->
                 <div class="logo">
                     <a class="load-halvor" href="index.html">
-                        <!-- <img src="assets/img/logo.svg" alt=""> -->
-                        <h1 class="font-logo"><_LorolRoc_></h1>
+                        <img src="assets/img/lorol-roc.png" alt="">
+                        <!-- <h1 class="font-logo"><_LorolRoc_></h1> -->
                     </a>
                 </div>
 
@@ -44,6 +135,9 @@
                     <li class="normal-link active"><a class="load-halvor" data-link='HOME' href="index.html">HOME</a></li>
                     <li class="normal-link"><a class="load-halvor" data-link='SERVICES' href="service.html">SERVICES</a></li>
                     <li class="normal-link"><a class="load-halvor" data-link='ABOUT' href="about.html">ABOUT</a></li>
+                    <li class="normal-link"><a class="load-halvor" data-link='PACKAGES' href="packages.html">PACKAGES</a></li>
+                    <li class="normal-link"><a class="load-halvor" data-link='FAQ' href="faq.html">FAQ</a></li>
+
                     <!-- <li class="normal-link"><a class="load-halvor" data-link='WORK' href="work.html">WORK</a></li> -->
                     <!-- <li class="normal-link"><a class="load-halvor" data-link='BLOG' href="blog.html">BLOG</a></li> -->
 
@@ -467,15 +561,15 @@
         <!-- End About -->
 
         <!-- Start News -->
-        <!-- <section class="news between"> -->
-            <!-- <div class="container"> -->
-                <!-- <div class="row"> -->
-                    <!-- <div class="col-8">
+        <section class="news between">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
                         <div class="title-main">
                             <h2>News</h2>
                             <p>Find out everything.</p>
                         </div>
-                    </div> -->
+                    </div>
 
                     <!-- <div class="col-4 text-right">
                         <div class="button_su_border mt-10">
@@ -488,8 +582,43 @@
                             </a>
                         </div>
                     </div> -->
-                <!-- </div> -->
-            <!-- </div> -->
+                </div>
+                <div class="scene">
+                  <label class="card-wrap">
+                      <input type="checkbox" class="flipcard">
+                      <div class="card">
+                          <div class="front card-face">
+                              <img src="https://images.unsplash.com/photo-1517374148673-a38e9dd4fe6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" class="card-photo">
+                          </div>
+                          <div class="back card-face">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                          </div>
+                      </div>
+                  </label>
+                  <label class="card-wrap">
+                      <input type="checkbox" class="flipcard">
+                      <div class="card">
+                          <div class="front card-face">
+                              <img src="https://images.unsplash.com/photo-1531518326825-96490ddf2a89?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" class="card-photo">
+                          </div>
+                          <div class="back card-face">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                          </div>
+                      </div>
+                  </label>
+                  <label class="card-wrap">
+                      <input type="checkbox" class="flipcard">
+                      <div class="card">
+                          <div class="front card-face">
+                              <img src="https://images.unsplash.com/photo-1529911194209-8578109840df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" class="card-photo">
+                          </div>
+                          <div class="back card-face">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                          </div>
+                      </div>
+                  </label>
+                </div>
+            </div>
 
             <!-- <div class="container-fluid">
                 <div class="news-slider">

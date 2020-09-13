@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LorolRoc - FAQs</title>
+    <link rel="stylesheet" href="assets/css/plugin.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome/css/all.css">
+</head>
+
+<style>
+  /* @import url(https://fonts.googleapis.com/css?family=Raleway); */
+
+  body {
+    color: #333;
+    background: #fcfcfc;
+    /* font-family: 'Raleway', sans-serif; */
+    overflow-x: hidden;
+  }
+
+  /* .faq-header {
+    font-size: 12px;
+    border-bottom: 1px dotted #ccc;
+    padding: 24px; */
+  }
+
+  .faq-content {
+    margin: 0 auto;
+  }
+
+  .faq-question {
+    padding: 10px 0;
+    border-bottom: 1px dotted #ccc;
+  }
+
+  .panel-title {
+    font-size: 24px;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 10px 10px 0 48px;
+    display: block;
+    cursor: pointer;
+  }
+
+  .panel-content {
+    font-size: 20px;
+    padding: 0px 14px;
+    margin: 0 40px;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    position: relative;
+    opacity: 0;
+    -webkit-transition: .4s ease;
+    -moz-transition: .4s ease;
+    -o-transition: .4s ease;
+    transition: .4s ease;
+  }
+
+  .panel:checked~.panel-content {
+    height: auto;
+    opacity: 1;
+    padding: 14px;
+  }
+
+  .plus {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 4px;
+    z-index: 5;
+    font-size: 42px;
+    line-height: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-transition: .2s ease;
+    -moz-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
+  }
+
+  .panel:checked~.plus {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .panel {
+    display: none;
+  }
+</style>
+
+<body>
+
+    <!-- Start Preload -->
+    <!-- <div class="preloader">
+    </div>
+    <div class="block-1"></div>
+    <div class="block-2"></div>
+    <div class="logo-load">
+        <img src="assets/img/logo.svg" alt="">
+    </div>
+    <div class="logo-load spinning"></div>
+    <div class="over-all"></div> -->
+    <!-- End Preload -->
+
+    <!-- Start Navbar -->
+    <nav>
+        <div class="container">
+            <div class="navbars">
+
+                <!-- logo -->
+                <div class="logo">
+                    <a class="load-halvor" href="index.html">
+                      <img src="assets/img/lorol-roc.png" alt="">
+                    </a>
+                </div>
+
+                <!-- navbar link -->
+                <ul class="links">
+                    <li class="normal-link"><a class="load-halvor" data-link='HOME' href="index.html">HOME</a></li>
+                    <li class="normal-link"><a class="load-halvor" data-link='SERVICES' href="service.html">SERVICES</a></li>
+                    <li class="normal-link"><a class="load-halvor" data-link='ABOUT' href="about.html">ABOUT</a></li>
+                    <li class="normal-link"><a class="load-halvor" data-link='PACKAGES' href="packages.html">PACKAGES</a></li>
+                    <li class="normal-link active"><a class="load-halvor" data-link='FAQ' href="faq.html">FAQ</a></li>
+
+                    <!-- <li class="normal-link"><a class="load-halvor" data-link='WORK' href="work.html">WORK</a></li> -->
+                    <!-- <li class="normal-link"><a class="load-halvor" data-link='BLOG' href="blog.html">BLOG</a></li> -->
+
+                    <li>
+                        <div class="button_su">
+                            <span class="su_button_circle">
+                            </span>
+                            <a href="contact.html" class="button_su_inner load-halvor">
+                                <span class="button_text_container">
+                                    CONTACT US
+                                </span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- mobile menu -->
+                <div class="toggle">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+
+
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+
+    <!-- Start Content -->
+    <div id="halvor">
+
+      <!-- Start Header -->
+      <section class="header-page">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-6 col-12 text-md-left text-center mt-30">
+
+                      <!-- head-title -->
+                      <div class="head-text">
+                          <h2>FREQUENTLY ASKED QUESTIONS</h2>
+                          <div class="mt-10"></div>
+                          <!-- <div class="faq-header">Frequently Asked Questions</div> -->
+                      </div>
+                  </div>
+
+              </div>
+              <div id="headmove" class="lines-page">
+                  <div data-depth="0.2" class="img-line">
+                      <img src="assets/img/lines.png" alt="">
+                  </div>
+
+              </div>
+          </div>
+      </section>
+      <!-- End Header -->
+
+      <section class="main-service between">
+          <div class="container">
+              <div class="row">
+                <div class="faq-content">
+                  <div class="faq-question">
+                    <input id="q1" type="checkbox" class="panel">
+                    <div class="plus">+</div>
+                    <label for="q1" class="panel-title">What is the meaning of life?</label>
+                    <div class="panel-content">42</div>
+                  </div>
+
+                  <div class="faq-question">
+                    <input id="q2" type="checkbox" class="panel">
+                    <div class="plus">+</div>
+                    <label for="q2" class="panel-title">How much wood would a woodchuck chuck?</label>
+                    <div class="panel-content">A woodchuck would chuck all the wood he could chuck, if a woodchuck could chuck wood!</div>
+                  </div>
+
+                  <div class="faq-question">
+                    <input id="q3" type="checkbox" class="panel">
+                    <div class="plus">+</div>
+                    <label for="q3" class="panel-title">What happens if Pinocchio says, "my nose will grow now"?</label>
+                    <div class="panel-content">Certain questions are better left &nbsp; <a href="https://en.wikipedia.org/wiki/The_Unanswered_Question" target="_blank">unanswered</a></div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Start Footer -->
+      <footer>
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-10 offset-md-1 text-center">
+                      <div class="to-touch">
+                          <div class="bg-footer" id="headmove-3">
+                              <div data-depth="0.2" class="img-line">
+                                  <img src="assets/img/lines.png" alt="">
+                              </div>
+                          </div>
+                          <h2>GET IN TOUCH WITH US !</h2>
+                          <p>Creative team to your disposal</p>
+                          <div class="button_su mt-10">
+                              <span class="su_button_circle">
+                              </span>
+                              <a href="#" class="button_su_inner">
+                                  <span class="button_text_container">
+                                      CONTACT US
+                                  </span>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-md-12 text-center mt-40">
+                      <div class="nav-footer">
+                          <ul>
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">SERVICES</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                            <!-- <li><a href="#">WORK</a></li> -->
+                            <!-- <li><a href="#">BLOG</a></li> -->
+                            <li><a href="#">CONTACT</a></li>
+                          </ul>
+                      </div>
+                  </div>
+
+                  <div class="col-md-6 text-center text-md-right mt-30">
+                      <div class="copy">
+                        <p>Made by <a href="index.html">LorolRoc</a>.</p>
+                      </div>
+                  </div>
+
+                  <div class="col-md-6 text-center text-md-left mt-30">
+                      <div class="social-footer">
+                          <ul>
+                              <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                              <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                              <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                              <!-- <li><a href="#"><i class="fab fa-behance" aria-hidden="true"></i></a></li> -->
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+      <!-- End Footer -->
+
+    </div>
+    <!-- End Content -->
+
+    <script src="assets/js/plugin.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
